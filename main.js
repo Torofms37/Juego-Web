@@ -70,9 +70,19 @@ function ataqueAleatorioEnemigo() {
     } else if (aleatorio == 2){
         ataqueEnemigo = 'Agua'
     } else {
-        ataqueEnemigo = 'Tiera'
+        ataqueEnemigo = 'Tierra'
     }
 
+    crearMensaje();
+}
+
+function crearMensaje() {
+    let sectionMensaje = document.getElementById('mensajes');
+    
+    let parrafo = document.createElement('p');
+    parrafo.innerHTML = 'Tu mascota atacó con ' + ataqueJugador + ", la mascota del enemigo atacó con " + ataqueEnemigo + " cambiar";
+
+    sectionMensaje.appendChild(parrafo);
 }
 
 

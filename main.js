@@ -1,6 +1,5 @@
-function ataqueJugador() {
-
-}
+let ataqueJugador
+let ataqueEnemigo
 
 function inicarJuego() {
     let botonMascotaJugador = document.getElementById('boton-mascota')
@@ -36,12 +35,12 @@ let spanMascotaJugador = document.getElementById('mascota-jugador')
 }
 
 function seleccionarMascotaEnemigo() {
-    let ataqueAletario = aleatorio(1,3)
+    let mascotaAletario = aleatorio(1,3)
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if(ataqueAletario == 1) {
         spanMascotaEnemigo.innerHTML = 'Hipodoge'
-    } else if (ataqueAletario == 2) {
+    } else if (mascotaAletario == 2) {
         spanMascotaEnemigo.innerHTML = 'Capipepo'
     } else {
         spanMascotaEnemigo.innerHTML = 'Ratigueya'
@@ -50,17 +49,30 @@ function seleccionarMascotaEnemigo() {
 
 function ataqueFuego() {
     ataqueJugador = 'Fuego'
-    alert(ataqueJugador)
+    ataqueAleatorioEnemigo()
 }
 
 function ataqueAgua() {
     ataqueJugador = 'Agua'
-    alert(ataqueJugador)
+    ataqueAleatorioEnemigo()
 }
 
 function ataqueTierra() {
     ataqueJugador = 'Tierra'
-    alert(ataqueJugador)
+    ataqueAleatorioEnemigo()
+}
+
+function ataqueAleatorioEnemigo() {
+    let ataqueAletario = aleatorio(1,3)
+
+    if(ataqueAletario == 1) {
+        ataqueEnemigo = 'Fuego'
+    } else if (aleatorio == 2){
+        ataqueEnemigo = 'Agua'
+    } else {
+        ataqueEnemigo = 'Tiera'
+    }
+
 }
 
 

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+    font-family: 'Fredoka One', cursive;
+    height: 100vh;
+    background: #F15412;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+}
+
+.subtitle {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 190px;
+    height: 100px;
+    border-radius: 17px;
+    background: #f77036;
+    box-shadow:  5px 5px 7px #d25f2e,
+    -5px -5px 7px #ff813e;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-mokepon img {
+    width: 90px;
+}
+
+input {
+    display: none;
+}
+
+#boton-mascota {
+    padding-bottom: 20px;
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+    margin-top: 5px;
+}
+
+#boton-mascota:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+#boton-mascota:active {
+	position:relative;
+	top:1px;
+}
+
+        

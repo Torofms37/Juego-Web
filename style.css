@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&display=swap');
 
 body {
     font-family: 'Fredoka One', cursive;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     background: #F15412;
 }
@@ -15,6 +16,8 @@ body {
 
 .title {
     color: white;
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
 }
 
 .subtitle {
@@ -43,6 +46,11 @@ body {
     align-items: center;
 }
 
+.tarjeta-de-mokepon:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+
 .tarjeta-de-mokepon img {
     width: 90px;
 }
@@ -52,31 +60,63 @@ input {
 }
 
 #boton-mascota {
-    padding-bottom: 20px;
-	box-shadow:inset 0px 1px 0px 0px #dcecfb;
-	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
-	background-color:#bddbfa;
-	border-radius:6px;
-	border:1px solid #84bbf3;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #528ecc;
-    margin-top: 5px;
+    font-size:15px;
+    font-family:Arial;
+    width: 170px;
+    height: 45px;
+    background-color: #f77036;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 17px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
 }
 
 #boton-mascota:hover {
-	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
-	background-color:#80b5ea;
-}
-#boton-mascota:active {
-	position:relative;
-	top:1px;
+    opacity: 86%;
+    cursor: pointer;
 }
 
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #f77036;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
         
+#mensajes {
+    width: 280px;
+    background-color: #d6764c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#boton-reiniciar:hover {
+    border-radius: 17px;
+    background-color: #c26a44;
+    cursor: pointer;
+}

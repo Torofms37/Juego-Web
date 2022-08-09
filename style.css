@@ -60,7 +60,7 @@ input {
 }
 
 input:checked + label {
-    background-color: #f4805d;
+    background-color: #112f58;
 }
   
 
@@ -71,7 +71,7 @@ input:checked + label {
     height: 45px;
     background-color: #f77036;
     border-radius: 17px;
-    background: #a7a19c;
+    background: #112f58;
     box-shadow:  5px 5px 7px #d25f2e,
     -5px -5px 7px #ff813e;
     padding: 10px;
@@ -126,7 +126,7 @@ input:checked + label {
 
 #boton-reiniciar:hover {
     border-radius: 17px;
-    background-color: #c26a44;
+    background-color: #112f58;
     cursor: pointer;
 }
 

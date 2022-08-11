@@ -25,11 +25,14 @@ body {
 }
 
 .tarjetas, .tarjetas-ataques {
-    display: grid;
+    display: flex;
+    gap: 10px;
+
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center; 
     column-gap: 15px;
-    row-gap: 15px;
+    row-gap: 15px; */
   }
   
 
@@ -163,13 +166,41 @@ input:checked + label {
     justify-content: center;
 }
 
-
-#mapa {
-    border: 2px solid #fff;
+#ver-mapa button {
+    font-size:15px;
+    font-family:Arial;
+    width: 50px;
+    height: 50px;
+    background-color: #f77036;
+    border-radius: 17px;
+    background: #112f58;
+    box-shadow:  5px 5px 7px #d25f2e,
+    -5px -5px 7px #ff813e;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 17px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
 }
 
 @media (max-width: 635px) {
     .tarjetas, .tarjetas-ataques {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+  }
+
+@media (max-width: 300px) {
+  #ver-mapa div{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 349px) {
+    .subtitle{
+        text-align: center;
     }
   }

@@ -1,0 +1,23 @@
+{
+  "name": "cursoweb",
+  "version": "1.0.0",
+  "description": "En este repositorio se estará subiendo avances de un proyecto web con orientación a un juego.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Torofms37/Juego-Web.git"
+  },
+  "author": "Torofms37",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Torofms37/Juego-Web/issues"
+  },
+  "homepage": "https://github.com/Torofms37/Juego-Web#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
